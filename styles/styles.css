@@ -1,0 +1,88 @@
+.banner-image img{
+    width: 100%;
+}
+.banner-sub-text {
+    left: 0px;
+    top: 0px;
+    
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 32px;
+    /* identical to box height, or 213% */
+    
+    align-items: center;
+    text-align: center;
+    
+    color: rgba(51, 51, 51, 0.5);
+    
+}
+.a-float-left {
+    float: left;
+    
+}
+.a-float-right {
+    float: right;
+}
+.page-title {
+
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 42px;
+    /* or 175% */
+
+    align-items: center;
+    text-transform: uppercase;
+
+    background: linear-gradient(90deg, #FFAB00 0%, #E95A08 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.page-tags span{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    /* identical to box height, or 200% */
+    padding: 0 10px;
+    
+    
+    color: #1C70FF; 
+}
+.line-block.left .line-block-content{
+    padding-left: 20px;
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    /* or 188% */
+
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 23px;
+}
+.line-block .vr{
+    width: 40px;
+    min-height: 1em;
+    background-color: currentColor;
+    opacity: 0.80;
+}
+.title-secondary{
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 30px;
+    text-transform: uppercase;
+
+    color: #63656B;
+}
