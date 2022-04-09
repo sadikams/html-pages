@@ -2,7 +2,40 @@
 <html>
 
 <head>
-    <title>Bootstrap 101 Template</title>
+    <title>Page1</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8100E5YGZV"></script>
+<script>
+    var timeVisit = new Date().getTime();
+
+//  new Date();
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-8100E5YGZV');
+
+  gtag('event', 'page_view', {
+  page_title: document.title,
+  page_location: location.href,
+  page_path: location.pathname,
+  send_to: 'G-8100E5YGZV'
+})
+window.onbeforeunload = function(){
+    gtag('event', 'page_time_spent',{
+    'name': 'page_time_spent',
+    'value': (new Date().getTime() - timeVisit)/1000,
+    'event_category': 'JS Dependencies',
+    send_to: 'G-8100E5YGZV'
+  });
+    }
+function clickFav(){
+    gtag('event', 'favourite_clicked', {
+    page_location: document.title,
+  send_to: 'G-8100E5YGZV'
+})
+}
+
+</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -40,7 +73,7 @@
                         Akbar Birbal is an iconic duo that needs no introduction, especially in India. These historic folklores have been passed down for generations, and will remain relevant for generations to come. It truly is a timeless masterpiece dearly loved by kids and adults alike. While watching Akbar Birbal as a show is great fun, no doubt but there’s more to it than just entertainment. In fact, most experts rate Akbar Birbal to be one of the best Indian shows for kids.
                     </div>
             </div>
-            <div class="title-secondary mt-4">
+            <div onClick= "clickFav()" class="title-secondary mt-4">
                 HERE ARE 5 REASONS why experts recommend Tales of Birbal for kids:
             </div>
         </div>
