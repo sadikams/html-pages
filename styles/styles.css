@@ -1,5 +1,60 @@
+.page-body {
+    padding: 0px 1.5rem !important;
+}
+.fixed-icon{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    top: 50;
+    right: 0;
+    border-radius: 50%;
+    text-align: center;bottom: 0;
+    background: linear-gradient(90deg, #FFAB00 0%, #E95A08 100%);
+}
+.ft-6{
+    font-weight: 600 ;
+}
+.creative {
+    padding-right: 5px;
+}
+.fixed-icon img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.pos-real{
+    position: relative;
+}
+.page-shares.share span {
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    padding: 0 10px;
+    border: 1px solid #FFAB00;
+    margin: 10px 5px;
+    border-radius: 50%;
+    height: 50x;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+.page-shares.share span img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
 .banner-image img{
     width: 100%;
+    max-height: 600px;
 }
 .banner-sub-text {
     left: 0px;
@@ -41,6 +96,7 @@
     background-clip: text;
 }
 .page-tags span{
+    font-family: 'Baloo 2';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -71,10 +127,11 @@
     margin: 0px 23px;
 }
 .line-block .vr{
-    width: 40px;
     min-height: 1em;
     background-color: currentColor;
     opacity: 0.80;
+    flex: 0 0 8px;
+    border-radius: 5px;
 }
 .title-secondary{
     font-family: 'Baloo 2';
@@ -85,4 +142,44 @@
     text-transform: uppercase;
 
     color: #63656B;
+}
+
+.title-third{
+    font-family: 'Baloo';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 32px;
+    /* identical to box height, or 178% */
+    background: linear-gradient(90deg, #FFAB01 2.07%, #EA5D08 65.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.content{
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 32px;
+    /* or 213% */
+    
+    
+    color: #333333;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 20px 0px;
+}
+.shares-links .title-secondary{
+    text-align: center;
+    font-size: 25px;
 }

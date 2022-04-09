@@ -2,12 +2,48 @@
 <html>
 
 <head>
-    <title>Bootstrap 101 Template</title>
+    <title>Page 1</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8100E5YGZV"></script>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="styles/styles.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;407;500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        var timeVisit = new Date().getTime();
+
+        //  new Date();
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-8100E5YGZV');
+
+        gtag('event', 'page_view', {
+            page_title: document.title,
+            page_location: location.href,
+            page_path: location.pathname,
+            send_to: 'G-8100E5YGZV'
+        })
+        window.onbeforeunload = function () {
+            gtag('event', 'page_time_spent', {
+                'name': 'page_time_spent',
+                'value': (new Date().getTime() - timeVisit) / 1000,
+                'event_category': 'JS Dependencies',
+                send_to: 'G-8100E5YGZV'
+            });
+        }
+        function clickFav() {
+            gtag('event', 'favourite_clicked', {
+                page_location: document.title,
+                send_to: 'G-8100E5YGZV'
+            })
+        }
+
+    </script>
 </head>
 
 <body>
@@ -22,30 +58,127 @@
             <img src="./media/Birbal_03 1.png" class="img-fluid" alt="Responsive image" />
         </div>
         <div class="page-body container d-flex flex-column">
-            <div class="banner-sub-text">
-                <span class="a-float-left">121 Views | 70 Likes</span>
-                <span class="a-float-right">4 Min Read</span>
+            <div class="banner-sub-text mt-3">
+                <span class="a-float-left">121 Views &nbsp; | &nbsp; 70 Likes</span>
+                <span class="a-float-right">4 MIN READ</span>
             </div>
-            <div class="page-title">
-                Top 5 reasons why experts recommend Tales of Birbal for kids 
+            <div class="page-title mt-4">
+                Top 5 reasons why experts recommend Tales of Birbal for kids
             </div>
-            <div class="page-tags d-flex justify-content-center">
+            <div class="page-tags d-flex justify-content-center mt-3">
                 <span>#stories</span>
                 <span>#Indian_Folklore</span>
                 <span>#IQ</span>
             </div>
-            <div class="line-block left d-flex">
-                    <div class="vr"></div>
-                    <div class="line-block-content">
-                        Akbar Birbal is an iconic duo that needs no introduction, especially in India. These historic folklores have been passed down for generations, and will remain relevant for generations to come. It truly is a timeless masterpiece dearly loved by kids and adults alike. While watching Akbar Birbal as a show is great fun, no doubt but there’s more to it than just entertainment. In fact, most experts rate Akbar Birbal to be one of the best Indian shows for kids.
-                    </div>
+            <div class="line-block left d-flex mt-4 pos-real">
+                <div class="vr"></div>
+                <div class="line-block-content">
+                    Akbar Birbal is an iconic duo that needs no introduction, especially in India. These historic
+                    folklores have been passed down for generations, and will remain relevant for generations to come.
+                    It truly is a timeless masterpiece dearly loved by kids and adults alike. While watching Akbar
+                    Birbal as a show is great fun, no doubt but there’s more to it than just entertainment. In fact,
+                    most experts rate Akbar Birbal to be one of the best Indian shows for kids.
+                </div>
+                <span class="fixed-icon">
+                    <img src="./media/Like.png" class="img-fluid" alt="Responsive image">
+                </span>
             </div>
-            <div class="title-secondary mt-4">
+            <div class="title-secondary mt-5">
                 HERE ARE 5 REASONS why experts recommend Tales of Birbal for kids:
+            </div>
+            <div class="mt-4">
+                <div class="title-third ">1. It’s Oh!-So-Witty! </div>
+                <div class="content">A chuckle a day hurts nobody. We all love us some humour and so do kids. They love
+                    stories that tickle their funny bones! Birbal is known for his outstanding wit which adds just the
+                    right amount of humour to every story. It keeps the kids entertained and hooked to the story making
+                    sure they pay attention throughout.
+                    Humour is also what kids retain the most. They love to discuss what they watched and share jokes
+                    with their peers. This is one way to make sure your kid develops the best sense of humour. </div>
+            </div>
+
+
+            <div class="mt-2">
+                <div class="title-third ">2. It Follows a Pattern: Problem > Solution > Reward </div>
+                <div class="content">Every Akbar Birbal story follows a pattern – there’s a problem presented to the
+                    emperor Akbar and the emperor turns to one of his seven gems of courtesans, Birbal, for solution.
+                    Kids love routine and repetition. They recognize the pattern and know that with every episode,
+                    there’s going to be a new problem and a new solution, but the way the story progresses is the same.
+                    This helps them make predictions and they begin to understand what comes next. And it’s very
+                    rewarding when their predictions come true! </div>
+            </div>
+
+            <div class="mt-2">
+                <div class="title-third ">3. Encourages Critical Thinking </div>
+                <div class="content">Birbal is not only witty but has an impeccable presence of mind and intelligence.
+                    He rarely ever jumps to conclusions and there’s rarely ever a ready solution at hand. Story
+                    progresses with Birbal carefully and objectively analysing the issue at hand to come up with a
+                    logical solution.
+                    This encourages the kids to do the same and enhances their critical thinking capabilities.they’ll
+                    learn how to evaluate any given situation and form a judgement. And what’s best is that all the
+                    learning happens organically without them having the slightest clue that they are picking up a
+                    skill. </div>
+            </div>
+            <div class="mt-2">
+                <div class="title-third ">4. Inculcates Ethical and Moral Values </div>
+                <div class="content">There’s no better way than storytelling to teach a child some good values! Akbar
+                    Birbal stories, apart from being amusing, also teaches important virtues of life. It imparts a
+                    valuable moral at the end of every story without it sounding preachy.
+                    And moral values help kids make the right choices over the easy or preferred ones. Don’t be
+                    surprised when you see your elder one share a candy with your younger one next time, or when they
+                    hesitate to lie. Those could be some direct outcomes of watching the show. </div>
+            </div>
+            <div class="mt-2">
+                <div class="title-third ">5. It’s Familiar and Relatable </div>
+                <div class="content">Majority of the media that Indian children consume these days are developed in the
+                    Western setting. There is a huge cultural and visual gap between what they see around them and
+                    what’s shown on the screen. While this opens up an opportunity to get acquainted with different
+                    cultures, it could be very confusing to young minds. It often leaves them with questions,
+                    confusions, and doubts that go unanswered.
+                    Akbar Birbal, though set in a different era, is very Indian and has a familiar setting and
+                    characters. This helps children easily relate to the characters and will not take their focus off
+                    the story. Also, familiar figures tend to leave a noticeably huge impact on young minds than
+                    strangers do. </div>
+            </div>
+
+            <div class="line-block left d-flex mt-4">
+                <div class="vr"></div>
+                <div class="line-block-content">
+                    To sum it up, Akbar Birbal is a simple yet engaging series that leaves kids with organically
+                    acquired values and skills, and a chuckle or two. Here is what we recommend:
+                    <ul>
+                        <li>Pick up Akbar Birbal books and read them with your kids</li>
+                        <li>Encourage them to think about how Birbal arrived at the solution</li>
+                        <li>Discuss the moral values of the story </li>
+                        <li>Casually mention how being clever helped Birbal </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <div class="content ">If reading books is just not your thing, or if you can’t find the time for reading
+                    sessions, don’t worry. We got you! Show your kids our Akbar Birbal animated series here.
+                    With kids getting their share of fun and you comforted about the right utilisation of screen time,
+                    it’s an absolute win-win.
+                </div>
+            </div>
+            <div class="mt-2">
+                <div class="content">
+                    <span class="ft-6">By Creative Galiyo</span>&nbsp; &nbsp;| &nbsp; &nbsp;<span>Jan 24, 2020</span>
+                </div>
+            </div>
+            <div class="mt-3">
+                <hr class="content" />
+            </div>
+            <div class="mt-2 shares-links">
+                <div class="title-secondary">SHARE</div>
+                <div class="page-shares share d-flex justify-content-center mt-3 mb-4">
+                    <span> <img src="./media/facebook.png" class="img-fluid" alt="Responsive image" /></span>
+                    <span> <img src="./media/twitter.png" class="img-fluid" alt="Responsive image" /></span>
+                    <span> <img src="./media/Vector.png" class="img-fluid" alt="Responsive image" /></span>
+                </div>
             </div>
         </div>
     </div>
-
 </body>
 
 </html>
