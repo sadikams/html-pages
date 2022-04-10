@@ -39,6 +39,7 @@
         function clickFav() {
             gtag('event', 'favourite_clicked', {
                 page_location: document.title,
+                value:document.title,
                 send_to: 'G-8100E5YGZV'
             })
         }
@@ -79,7 +80,7 @@
                     Birbal as a show is great fun, no doubt but there’s more to it than just entertainment. In fact,
                     most experts rate Akbar Birbal to be one of the best Indian shows for kids.
                 </div>
-                <span class="fixed-icon">
+                <span class="fixed-icon" onClick="clickFav()">
                     <img src="./media/Like.png" class="img-fluid" alt="Responsive image">
                 </span>
             </div>
@@ -156,7 +157,7 @@
 
             <div class="mt-4">
                 <div class="content ">If reading books is just not your thing, or if you can’t find the time for reading
-                    sessions, don’t worry. We got you! Show your kids our Akbar Birbal animated series here.
+                    sessions, don’t worry. We got you! Show your kids our Akbar Birbal animated series <a class="ancher-class" href="#" target="_blank">here</a>.<br>
                     With kids getting their share of fun and you comforted about the right utilisation of screen time,
                     it’s an absolute win-win.
                 </div>
@@ -166,6 +167,14 @@
                     <span class="ft-6">By Creative Galiyo</span>&nbsp; &nbsp;| &nbsp; &nbsp;<span>Jan 24, 2020</span>
                 </div>
             </div>
+
+            <span class="liked-icon" >
+                <img src="./media/liked.png" class="liked-img-fluid" alt="Responsive image">
+            </span>
+                
+                <div >
+                    <span class="liked-text">Liked by you</span>
+                </div>
             <div class="mt-3">
                 <hr class="content" />
             </div>
