@@ -59,23 +59,23 @@
 .banner-sub-text {
     left: 0px;
     top: 0px;
-    
+
     font-family: 'Baloo 2';
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 32px;
     /* identical to box height, or 213% */
-    
+
     align-items: center;
     text-align: center;
-    
+
     color: rgba(51, 51, 51, 0.5);
-    
+
 }
 .a-float-left {
     float: left;
-    
+
 }
 .a-float-right {
     float: right;
@@ -103,9 +103,9 @@
     line-height: 32px;
     /* identical to box height, or 200% */
     padding: 0 10px;
-    
-    
-    color: #1C70FF; 
+
+
+    color: #1C70FF;
 }
 .line-block.left .line-block-content{
     padding-left: 20px;
@@ -167,13 +167,13 @@
     font-size: 15px;
     line-height: 32px;
     /* or 213% */
-    
-    
+
+
     color: #333333;
-    
-    
+
+
     /* Inside auto layout */
-    
+
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -184,7 +184,7 @@
     font-size: 25px;
 }
 .ancher-class{
-    text-decoration:underline; 
+    text-decoration:underline;
     background: linear-gradient(90deg, #FFAB01 2.07%, #EA5D08 65.92%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -213,4 +213,11 @@
     color: #999999;
     margin-left: 53px;
     margin-top: -30px;
+}
+.hide-div{
+  display: none;
+}
+.low-opacity {
+    opacity: .4;
+    transition: all .4s ease-in-out;
 }

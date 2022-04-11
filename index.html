@@ -3,7 +3,8 @@
 <html>
 
 <head>
-    <title>Page 1</title>
+    <title> Tales of Birbal</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8100E5YGZV"></script>
     <!-- Bootstrap -->
@@ -38,7 +39,10 @@
             });
         }
         function clickFav() {
-            gtag('event', 'favourite_clicked', {
+          document.getElementById('likedText').classList.remove("hide-div");
+          document.getElementById('likedIcon').classList.remove("hide-div");
+          document.querySelector(".fixed-icon").classList.add("low-opacity")
+          gtag('event', 'favourite_clicked', {
                 page_location: document.title,
                 value:document.title,
                 send_to: 'G-8100E5YGZV'
@@ -84,7 +88,7 @@
                     Birbal as a show is great fun, no doubt but there’s more to it than just entertainment. In fact,
                     most experts rate Akbar Birbal to be one of the best Indian shows for kids.
                 </div>
-                
+
             </div>
             <div class="title-secondary mt-5">
                 HERE ARE 5 REASONS why experts recommend Tales of Birbal for kids:
@@ -170,11 +174,11 @@
                 </div>
             </div>
 
-            <span class="liked-icon" >
+            <span class=" liked-icon hide-div" id="likedIcon">
                 <img src="./media/liked.png" class="liked-img-fluid" alt="Responsive image">
             </span>
-                
-                <div >
+
+                <div id="likedText" class="hide-div" >
                     <span class="liked-text">Liked by you</span>
                 </div>
             <div class="mt-3">
